@@ -3,3 +3,145 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+
+.wrapper{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+}
+
+aside{
+    background-color: gray;
+    height: 100vh;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 1rem;
+}
+
+.box-aside{
+    width: 8rem;
+    height: 4rem;
+    background-color: blue;
+}
+
+section{
+    width: 70%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+header{
+    height: 10%;
+    background-color: lightgray;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+
+.box-header{
+    width: 6rem;
+    height: 2rem;
+    background-color: blue;
+    visibility: hidden;
+}
+
+.dh-square{
+    width: 2rem;
+    height: 2rem;
+    background-color: gray;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main{
+    width: 100%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.box-main{
+    width: 80%;
+    height: 60%;
+    background-color: gray;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.into-box-main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+.dh{
+    width: 6rem;
+    height: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: lightgray;
+}
+
+
+
+.round{
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    background-color: gray;
+    margin: 1rem;
+    align-self: flex-end;
+    
+}
+
+.round-mobile{
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    background-color: gray;
+    margin: 1rem;
+    align-self: flex-start;
+    visibility: hidden;
+    
+}
+
+@media screen and (max-width:720px) {
+
+    aside{
+        display: none;
+    }
+    
+    section{
+        width: 100%;
+    }
+
+    .box-main{
+        width: 100%;
+    }
+    
+    .round{
+        display: none;
+    }
+
+    .round-mobile{
+        visibility: visible;
+    }
+}
+
+
+
+
+
+
